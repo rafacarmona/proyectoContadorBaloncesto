@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">proyectoContadorBaloncesto</string>
+    <string name="local">Local</string>
+    <string name="visitante">Visitor</string>
+    <string name="mas_uno">+1</string>
+    <string name="mas_dos">+2</string>
+    <string name="mas_tres">+3</string>
+    <string name="undo">undo</string>
+    <string name="reset">reset</string>
+</resources>

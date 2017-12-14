@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2cbcb"
+    android:orientation="horizontal"
+    tools:context="com.carmona.arrabal.proyectocontadorbaloncesto.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/annadirLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#717171"
+                app:srcCompat="@drawable/ic_arrow_up" />
+
+            <TextView
+                android:id="@+id/localTV"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:textColor="#fff"
+                android:text="@string/local" />
+
+            <ImageButton
+                android:id="@+id/quitarLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#717171"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_arrow_down" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/marcadorLocal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="140sp"
+            android:textColor="#aefbff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#d97e07"
+            android:text="0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/botonMasDosLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mas_dos" />
+
+            <Button
+                android:id="@+id/botonMasUnoLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/mas_uno" />
+
+            <Button
+                android:id="@+id/botonMasTresLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/mas_tres" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/botonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:drawableTop="@drawable/ic_restart"
+            />
+
+        <Button
+            android:id="@+id/botonUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/undo"
+            android:drawableTop="@drawable/ic_undo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/annadirVisitante"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#717171"
+                app:srcCompat="@drawable/ic_arrow_up" />
+            <TextView
+                android:id="@+id/visitanteTV"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="#ff0000"
+                android:textSize="60sp"
+                android:text="@string/visitante" />
+            <ImageButton
+                android:id="@+id/quitarVisitante"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#717171"
+                app:srcCompat="@drawable/ic_arrow_down" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/marcadorVisitante"
+            android:gravity="center"
+            android:textSize="140sp"
+            android:layout_width="match_parent"
+            android:textColor="#aefbff"
+            android:background="#d97e07"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/botonMasTresVisitante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/mas_tres" />
+
+
+            <Button
+                android:id="@+id/botonMasUnoVisitante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/mas_uno" />
+
+            <Button
+                android:id="@+id/botonMasDosVisitante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mas_dos" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
